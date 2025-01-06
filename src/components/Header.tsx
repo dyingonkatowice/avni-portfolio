@@ -2,16 +2,13 @@
 
 import { ModeToggle } from "./mode-toggle"
 import Link from "next/link"
-import Image from "next/image"
 import { Menu } from "lucide-react"
 import { Battery, BatteryLow, BatteryMedium, BatteryFull } from 'lucide-react'
 import { Button } from "./ui/button"
 import { useState } from "react"
-import { useRouter } from "next/navigation"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const router = useRouter()
 
   return (
     <header className="fixed w-full backdrop-blur-[10px] bg-content-bg-light dark:bg-content-bg-dark z-50 border-b border-text-tertiary-light/10 dark:border-text-tertiary-dark/10">

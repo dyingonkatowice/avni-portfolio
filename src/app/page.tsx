@@ -13,7 +13,8 @@ import {
 import AppButtons from "@/components/AppButtons";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { FolderCode, MapIcon } from "lucide-react"
+import Image from 'next/image'
+import { FolderCode } from "lucide-react"
 
 export default function Home() {
   return (
@@ -22,7 +23,7 @@ export default function Home() {
       <main className="container flex-grow max-w-3xl px-4 sm:px-6 md:px-8 pt-16 pb-24 mx-auto">
         <div className="mt-8 flex flex-col gap-16">
           <div className="mx-auto items-center justify-center flex rounded-lg bg-[#0501700] p-4 backdrop-blur-sm border border-card-border-light dark:border-card-border-dark shadow-sm">
-            <p className="text-text-primary-light dark:text-text-secondary-dark"><span className="font-bold dark:text-lime-500 text-red-500">Hello,</span> I'm an <span className="font-semibold dark:text-lime-500 text-red-500">Full-stack Developer</span> based in <span className="font-semibold dark:text-lime-500 text-red-500">Katowice, Poland</span>.</p>
+            <p className="text-text-primary-light dark:text-text-secondary-dark"><span className="font-bold dark:text-lime-500 text-red-500">Hello,</span> I&apos;m an <span className="font-semibold dark:text-lime-500 text-red-500">Full-stack Developer</span> based in <span className="font-semibold dark:text-lime-500 text-red-500">Katowice, Poland</span>.</p>
           </div>
 
           <section className="flex flex-col-reverse sm:flex-row items-center gap-4 sm:gap-12 p-4">
@@ -39,10 +40,12 @@ export default function Home() {
             </div>
             <div className="relative hover:scale-105 hover:transition-all cursor-pointer hover:duration-300 w-[120px] h-[120px] sm:w-[180px] sm:h-[180px] ring-4 dark:ring-lime-500 ring-red-500 rounded-full">
               <div className="absolute inset-0 rounded-full cursor-pointer bg-card-bg-light dark:bg-card-bg-dark" />
-              <img
+              <Image
                 src="/cover.jpg"
                 alt="Avni Guzen"
                 className="absolute inset-0 w-full h-full rounded-full object-cover"
+                width={180}
+                height={180}
                 onClick={() => window.location.href = '/resume'}
               />
             </div>
@@ -55,7 +58,7 @@ export default function Home() {
                 About me
               </h2>
               <div className="text-text-secondary-light/90 dark:text-text-secondary-dark">
-                I'm a freelance full-stack developer living in Katowice, Poland with a passion for building digital services, products and solutions. I have a knack for creating user-friendly, efficient and scalable web and mobile applications. When I'm not coding, you can find me producing music, photographing and learning new languages. Currently, I'm working on a project that aims to help car rental companies to manage their fleet and customers. Previously, when I was working as an English Teacher, I was creating a mobile application called&nbsp;
+                I&apos;m a freelance full-stack developer living in Katowice, Poland with a passion for building digital services, products and solutions. I have a knack for creating user-friendly, efficient and scalable web and mobile applications. When I&apos;m not coding, you can find me producing music, photographing and learning new languages. Currently, I&apos;m working on a project that aims to help car rental companies to manage their fleet and customers. Previously, when I was working as an English Teacher, I was creating a mobile application called&nbsp;
                 <Dialog>
                   <DialogTrigger className="font-bold text-red-500 dark:text-lime-500 underline">
                     Tokatiz
